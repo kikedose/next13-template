@@ -8,18 +8,18 @@ export default function Home({ data }) {
   }, []);
 
   return (
-    <div>
+    <div className="w-full h-screen flex flex-col justify-center items-center">
       <Image
         src={data.sprites.front_default}
         width={96}
         height={96}
       />
 
-      <p>
+      <p className="text-lg font-medium text-sky-900">
         Next.js, Tailwind & Prisma
       </p>
 
-      <p>
+      <p className="text-sm text-stone-700">
         Boilerplate by Enrique Domínguez and
         {' '}
         {`${data.name[0].toUpperCase()}${data.name.substring(1)}`}
